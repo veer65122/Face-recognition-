@@ -51,6 +51,26 @@ The negative dataset is created using the **Labeled Faces in the Wild (LFW)** da
 8. Verify a person's identity using image similarity.
 
 ---
+## 📸 Sample Workflow
+
+```
+Capture Face
+      │
+      ▼
+Preprocess Image
+      │
+      ▼
+Generate Embeddings
+      │
+      ▼
+Compute L1 Distance
+      │
+      ▼
+Verification Score
+      │
+      ▼
+Verified / Not Verified
+```
 ## Siamese Network Architecture
 
 The model consists of:
@@ -62,5 +82,88 @@ The model consists of:
 - Binary Classification Output
 
 The network learns embeddings instead of directly classifying faces.
+
+---
+## 📦 Installation
+
+### Clone the repository
+
+```bash
+git clone https://github.com/veer65122/Face-recognition-.git
+cd Face-recognition-
+```
+
+### Install dependencies
+
+```bash
+pip install tensorflow opencv-python numpy matplotlib
+```
+## ▶️ Running the Project
+
+Launch Jupyter Notebook:
+
+```bash
+jupyter notebook
+```
+
+Open the notebook and run all cells in sequence.
+
+---
+## 📈 Training
+
+The model is trained using image pairs:
+
+- Positive Pair → Label = 1
+- Negative Pair → Label = 0
+
+**Loss Function:** Binary Cross Entropy
+
+**Optimizer:** Adam
+
+---
+## 🎯 Applications
+
+- Face Verification
+- Smart Attendance Systems
+- Secure Login Systems
+- Access Control
+- Identity Verification
+- AI Security Solutions
+
+---
+## 🚀 Future Improvements
+
+- Deploy using Flask or FastAPI
+- Build a Streamlit web application
+- Mobile application integration
+- Face anti-spoofing
+- Cloud deployment on AWS
+- Improve accuracy using FaceNet or ArcFace embeddings
+
+---
+## 👨‍💻 Author
+
+**Veer**
+
+B.Tech – Computer Science & Engineering (Data Science)
+
+**Interests:**
+- Artificial Intelligence
+- Machine Learning
+- Deep Learning
+- Computer Vision
+- Data Engineering
+
+GitHub: https://github.com/veer65122
+
+---
+## 🤝 Contributing
+
+Contributions are welcome!
+
+1. Fork the repository
+2. Create a feature branch
+3. Commit your changes
+4. Open a Pull Request
 
 ---
